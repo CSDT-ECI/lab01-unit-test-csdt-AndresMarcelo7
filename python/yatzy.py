@@ -9,6 +9,15 @@ class Yatzy:
         total += d4
         total += d5
         return total
+    
+    @staticmethod
+    def crazy_change(result_dice):
+        total = 0
+        for dice in result_dice:
+            total += dice*3 if dice%2==0 else dice*2
+        return total
+
+        
 
     @staticmethod
     def yatzy(dice):
